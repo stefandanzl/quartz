@@ -1,0 +1,66 @@
+@use "./base.scss";
+
+// put your custom CSS here!
+
+// Chords plugin styling
+.song-chords {
+  // Define default CSS variables that can be overridden
+  --section-color: #1976d2;
+  --chord-color: #e63946;
+  
+  font-family: 'Courier New', Courier, monospace !important;
+  white-space: pre !important;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+  margin: 1em 0;
+  line-height: 1.5;
+  font-size: 1rem;
+//   max-height: 500px; // Set a max height to enable scrolling
+//   overflow-y: auto; // Enable vertical scrolling
+
+  .section-header {
+    font-weight: bold;
+    color: var(--section-color); // Use CSS variable
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-family: 'Courier New', Courier, monospace !important;
+  }
+
+  .chord-line {
+    margin-top: 0.6em;
+    margin-bottom: 0;
+    font-family: 'Courier New', Courier, monospace !important;
+    letter-spacing: 0;
+    white-space: pre !important;
+    display: block;
+  }
+
+  .chord {
+    color: var(--chord-color); // Use CSS variable
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 1rem;
+    display: inline-block;
+    white-space: pre !important;
+  }
+
+  .lyric-line {
+    margin-bottom: 0.6em;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 1rem;
+    white-space: pre !important;
+  }
+
+  .empty-line {
+    height: 1em;
+  }
+  
+  // Control panel placeholder styling
+  .chords-control-panel-placeholder {
+    min-height: 8px; // Small height to indicate where controls will go
+    margin-bottom: 1em;
+  }
+}
+
+// Future external control panel styling can be added here

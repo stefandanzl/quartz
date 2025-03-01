@@ -1,0 +1,19 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - task: build-serve
+
+  build:
+    cmds:
+      - npm run quartz build
+
+  build-serve:
+    cmds:
+      - npm run quartz -- build --serve --verbose
